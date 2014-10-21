@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bt__dialog_bg"
+    android:paddingLeft="@dimen/dialog_padding_horizontal"
+    android:paddingRight="@dimen/dialog_padding_horizontal">
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.7"/>
+    
+    <TextView 
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8.5"
+        android:gravity="center"
+        android:textColor="@color/dialgo_text"
+        android:textSize="@dimen/dialog_title"/>
+    
+    <TextView 
+        android:id="@+id/tip"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="14.1"
+        android:gravity="center"
+        android:textColor="@color/dialgo_text"
+        android:textSize="@dimen/dialog_tip"/>
+    
+	<Button 
+	    android:id="@+id/btn_ok"
+	    android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9.4"
+        android:background="@null"
+        android:gravity="center"
+        android:textColor="@color/title_white"
+        android:textSize="@dimen/dialog_title"/>
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.4"/>
+</LinearLayout>

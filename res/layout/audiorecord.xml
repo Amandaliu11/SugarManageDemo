@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res/com.example.sugarmanagedemo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/bg_micro"
+    android:paddingTop="30dp">
+    
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+        
+        <ImageView 
+            android:id="@+id/img_microfan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/microfan"
+            android:scaleType="centerInside"/>
+        
+        <com.example.sugarmanagedemo.view.RoundProgressBar
+            android:id="@+id/roundProgressBar"    
+            android:layout_width="match_parent"    
+            android:layout_height="match_parent"
+            android_custom:roundColor="#f6fcf8"
+            android_custom:roundProgressColor="#41c36b"
+            android_custom:textIsDisplayable="false"    
+            android_custom:roundWidth="5dp"/>
+    </FrameLayout>
+    
+
+    
+    <TextView 
+        android:id="@+id/txt_microfan"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="正在录音……"
+        android:textColor="#3c3c3c"
+        android:textSize="30px"/>
+    
+
+</LinearLayout>

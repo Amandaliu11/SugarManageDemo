@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+   <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.75"
+        android:paddingTop="10dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:orientation="horizontal"
+        android:gravity="bottom">
+        
+        <!-- 日程 -->
+        <ImageView 
+            android:layout_width="0dp"
+            android:layout_weight="1.32"
+            android:layout_height="wrap_content"
+            android:src="@drawable/schedule"
+            android:scaleType="centerInside"/>
+        
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent"/>        
+        
+        <!-- 播报 -->
+        <ImageButton
+            android:id="@+id/btn_broadcast"
+            android:layout_width="0dp"
+            android:layout_weight="1.42"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:src="@drawable/talk"
+            android:scaleType="centerInside"
+            android:gravity="center"/>
+    </LinearLayout>
+    
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.33"
+        android:src="@drawable/dotted_line_gray"
+        android:scaleType="centerInside"/>
+    
+    <org.kymjs.aframe.ui.widget.KJListView 
+        android:id="@+id/list_schedule"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7.22">        
+    </org.kymjs.aframe.ui.widget.KJListView>
+    
+
+
+</LinearLayout>

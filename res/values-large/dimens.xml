@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title">36dp</dimen>
+    <dimen name="bloodsuger_rt">162dp</dimen>
+    <dimen name="time_rt">27dp</dimen>
+    <dimen name="bloodsuger_hint_pre">19.5dp</dimen>
+    <dimen name="bloodsuger_pre">27dp</dimen>
+    <dimen name="menu_item">30dp</dimen>
+    <dimen name="menu_height">75dp</dimen>
+    <dimen name="schedule_broadcast_book">22.5dp</dimen>    
+    <dimen name="dialog_title">25.5dp</dimen>
+    <dimen name="dialog_tip">22.5dp</dimen>
+    <dimen name="dialog_padding_horizontal">22.5dp</dimen>
+    <dimen name="dialog_padding_bind">37.5dp</dimen>
+    <dimen name="item_devicelist">27dp</dimen>
+    <dimen name="dialog_openbt_width">403.5dp</dimen>
+    <dimen name="dialog_openbt_height">285.75dp</dimen>
+    <dimen name="dialog_bindbt_height">401.25dp</dimen>
+    <dimen name="countdown_polarizing">67.5dp</dimen>
+</resources>

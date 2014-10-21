@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">        
+        <!-- the blood suger -->
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.92">
+            
+            <!-- 当前血糖值 -->
+            <TextView
+                android:id="@+id/txt_bloodsuger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="5.2"
+                android:textColor="@color/bloodsuger_green"
+                android:textSize="@dimen/bloodsuger_rt"
+                android:textStyle="bold|normal"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"/>
+            
+            <!-- 测量时间 -->
+            <TextView
+                android:id="@+id/txt_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/time_green"
+                android:textStyle="bold"
+                android:textSize="@dimen/time_rt"
+                android:text="(11:27)"
+                android:layout_alignBottom="@+id/txt_bloodsuger"
+                android:layout_toRightOf="@+id/txt_bloodsuger"/>
+        </RelativeLayout>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.26"
+            android:orientation="horizontal"></LinearLayout>
+        
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.41"
+            android:orientation="vertical">
+            
+            <!-- 昨天同时间的血糖值 -->
+            <TextView
+                android:id="@+id/txt_bloodsuger_pre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/bloodsuger_hint_green"
+                android:textSize="@dimen/bloodsuger_hint_pre"
+                android:text="昨天同时刻为5.5mmol/L"
+                android:layout_gravity="center_horizontal"/>
+            
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:orientation="horizontal">
+                
+                <LinearLayout 
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"/>
+                    
+                <ImageView 
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="2dp"
+                    android:background="@drawable/divider_listview"/>
+                
+                <LinearLayout 
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"/>
+                
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+        
+       <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.26"
+            android:orientation="horizontal"></LinearLayout>
+       
+       <!-- 活动控件 -->
+       <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.81"
+            android:orientation="horizontal"
+            android:background="@drawable/dotted_rect_gray"
+            android:padding="5dp">
+           
+           <!-- 运动 -->
+           <com.example.sugarmanagedemo.view.LongTouchButton 
+               android:id="@+id/btn_sport"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:background="@drawable/icon_bg_nf"
+               android:src="@drawable/sport"
+               android:scaleType="centerInside"/>
+           
+           <!-- 饮食 -->
+           <com.example.sugarmanagedemo.view.LongTouchButton
+               android:id="@+id/btn_diet"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:layout_marginLeft="5dp"
+               android:background="@drawable/icon_bg_nf"
+               android:src="@drawable/diet"
+               android:scaleType="centerInside"
+               />
+           
+           <!-- 药物 -->
+           <com.example.sugarmanagedemo.view.LongTouchButton
+               android:id="@+id/btn_medicine"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:layout_marginLeft="5dp"
+               android:background="@drawable/icon_bg_nf"
+               android:src="@drawable/medicine"
+               android:scaleType="centerInside"
+               />
+           
+           <!-- 心情 -->
+           <com.example.sugarmanagedemo.view.LongTouchButton 
+               android:id="@+id/btn_mood"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:layout_marginLeft="5dp"
+               android:background="@drawable/icon_bg_nf"
+               android:src="@drawable/mood"
+               android:scaleType="centerInside"
+               />      
+               
+           <!-- 更多 -->
+           <com.example.sugarmanagedemo.view.LongTouchButton 
+               android:id="@+id/btn_more"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:layout_marginLeft="5dp"
+               android:background="@drawable/icon_bg_nf"
+               android:src="@drawable/more"
+               android:scaleType="centerInside"
+               />   
+       </LinearLayout>
+       
+       <!-- 实时图谱 -->
+       <FrameLayout
+           android:id="@+id/layout_chart" 
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="4.67"
+           android:layout_marginTop="5dp"
+           android:background="@null"
+           />
+</LinearLayout>

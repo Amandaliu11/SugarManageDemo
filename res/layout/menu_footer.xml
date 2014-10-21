@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/menu_bg"
+    android:showDividers="middle"
+    android:divider="@drawable/menu_divider"
+    style="?android:attr/buttonBarStyle">
+    
+    <!-- 首页 -->
+    <Button 
+        android:id="@+id/menu_main"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@null"
+        android:text="@string/title_main"
+        android:textStyle="bold"
+        android:textColor="@drawable/menu_color"
+        android:textSize="@dimen/menu_item"
+        style="?android:attr/buttonBarButtonStyle" />
+    
+    <!-- 记录 -->
+    <Button         
+        android:id="@+id/menu_record"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@null"
+        android:text="@string/title_record"
+        android:textStyle="bold"
+        android:textColor="@drawable/menu_color"
+        android:textSize="@dimen/menu_item"
+        style="?android:attr/buttonBarButtonStyle" />
+    
+    <!-- 分析 -->
+    <Button 
+        android:id="@+id/menu_analyse"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@null"
+        android:text="@string/title_analyse"
+        android:textStyle="bold"
+        android:textColor="@drawable/menu_color"
+        android:textSize="@dimen/menu_item"
+        style="?android:attr/buttonBarButtonStyle" />
+
+    <!-- 就诊 -->
+    <Button 
+        android:id="@+id/menu_visit"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@null"
+        android:text="@string/title_visit"
+        android:textStyle="bold"
+        android:textColor="@drawable/menu_color"
+        android:textSize="@dimen/menu_item"
+        style="?android:attr/buttonBarButtonStyle" />
+    
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dialog_padding_horizontal"
+        android:paddingRight="@dimen/dialog_padding_horizontal"
+        android:paddingTop="@dimen/dialog_padding_horizontal">
+        <TextView
+            android:id="@+id/txt_currentsugar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="最新血糖值：6.9mmol/L"
+            android:textSize="@dimen/title"></TextView>
+        
+        <ImageView 
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignLeft="@+id/txt_currentsugar"
+            android:layout_alignRight="@+id/txt_currentsugar"
+            android:layout_below="@+id/txt_currentsugar"
+            android:background="@drawable/divider_listview"/>
+    </RelativeLayout>
+    
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dialog_padding_horizontal"
+        android:paddingRight="@dimen/dialog_padding_horizontal"
+        android:layout_marginTop="@dimen/dialog_padding_horizontal">
+        
+        <Button 
+            android:id="@+id/btn_record_diet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始正餐"/>
+        
+        <Button 
+            android:id="@+id/btn_record_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="开始加餐"/>
+    </LinearLayout>
+    
+    <org.kymjs.aframe.ui.widget.KJListView 
+        android:id="@+id/list_record"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dialog_padding_horizontal"
+        android:divider="@drawable/dotted_line_gray"
+        android:dividerHeight="2dp"
+        android:headerDividersEnabled="true"
+        android:footerDividersEnabled="false">        
+    </org.kymjs.aframe.ui.widget.KJListView>
+
+</LinearLayout>

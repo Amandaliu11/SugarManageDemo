@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="base_green">#47cd73</color>
+    <color name="title_white">#ffffff</color>
+    <color name="bloodsuger_green">#53d17b</color>
+    <color name="time_green">#4cd077</color>
+    <color name="bloodsuger_hint_green">#2f2f2f</color>
+    <color name="bloodsuger_pre_green">#3abb64</color>
+    <color name="schedule_broadcast_book">#ffffff</color>
+    <color name="dialgo_text">#6a6a6a</color>
+    <color name="search_green">#3db765</color>
+    <color name="item_devicelist">#545454</color>
+    <color name="countdown_polarizing">#4ec675</color>
+</resources>

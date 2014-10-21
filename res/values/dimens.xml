@@ -1,0 +1,24 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>    
+    <dimen name="title">48px</dimen>
+    <dimen name="bloodsuger_rt">216px</dimen>
+    <dimen name="time_rt">36px</dimen>
+    <dimen name="bloodsuger_hint_pre">26px</dimen>
+    <dimen name="bloodsuger_pre">36px</dimen>
+    <dimen name="menu_item">40px</dimen>
+    <dimen name="menu_height">100px</dimen>    
+    <dimen name="schedule_broadcast_book">30px</dimen>
+    <dimen name="dialog_title">34px</dimen>
+    <dimen name="dialog_tip">30px</dimen>
+    <dimen name="dialog_padding_horizontal">30px</dimen>
+    <dimen name="dialog_padding_bind">50px</dimen>
+    <dimen name="item_devicelist">36px</dimen>
+    <dimen name="dialog_openbt_width">538px</dimen>
+    <dimen name="dialog_openbt_height">381px</dimen>
+    <dimen name="dialog_bindbt_height">535px</dimen>
+    <dimen name="countdown_polarizing">90px</dimen>
+
+</resources>
